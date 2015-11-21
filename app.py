@@ -21,8 +21,8 @@ from flask.ext.heroku import Heroku
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ergahtoncxgrou:kFgf7Y9hEYIC1DS2oqBqjpWRWy@ec2-54-225-192-128.compute-1.amazonaws.com:5432/d2jua3sn9jr8ng' #hackathon posting secrets shhhhh
-app.config['UPLOAD_FOLDER'] #you prob need to do something about this in heroku#############################
-app.config.from_object(os.environ['APP_SETTINGS'])
+#app.config['UPLOAD_FOLDER'] #you prob need to do something about this in heroku#############################
+#app.config.from_object(os.environ['APP_SETTINGS'])
 heroku = Heroku(app)
 db = SQLAlchemy(app)
 
